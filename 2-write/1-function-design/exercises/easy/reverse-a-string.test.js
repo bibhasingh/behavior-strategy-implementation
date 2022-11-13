@@ -22,6 +22,21 @@ for (const solution of [secretSolution]) {
     it('a string with all capital letters', () => {
       expect(solution('ASDF')).toEqual('FDSA');
     });
+    it('a string with all small letters', () => {
+      expect(solution('saksham')).toEqual('mahskas');
+    });
+    it('a string with all number', () => {
+      expect(solution('95432')).toEqual('23459');
+    });
+    it('a string with sentence', () => {
+      expect(solution('my name is bibha')).toEqual('ahbib si eman ym');
+    });
+    it('a string with number and letters', () => {
+      expect(solution('123anil')).toEqual('lina321');
+    });
+    it('a string with special charecter', () => {
+      expect(solution('&@#%$')).toEqual('$%#@&');
+    });
     // write at least 5 more tests ...
   });
 }

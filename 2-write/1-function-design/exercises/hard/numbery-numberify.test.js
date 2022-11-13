@@ -15,9 +15,24 @@
 // -------- your solutions --------
 
 for (const solution of [secretSolution]) {
-  describe(solution.name + ': _', () => {
-    describe('_', () => {
-      it('_', () => {});
+  describe(solution.name + ': get numbery array', () => {
+    describe('array without number string_', () => {
+      it('_array without number string with alphabete only', () => {
+        expect(solution(['hello', 'how','where'])).toEqual([]);
+      });
+      it('_array without number string with alphanumeric', () => {
+        expect(solution(['he11o', 'h5w','w1ere'])).toEqual([]);
+      });
+    });
+    describe('array with number string_', () => {
+      it('_array with number string', () => {
+        expect(solution(['101', '11','23'])).toEqual([101,11,23]);
+      });
+    });
+    describe('array with number and alphanumeric  string_', () => {
+      it('_array with mix string', () => {
+        expect(solution(['saksham','101','sunita', '11','anil','23'])).toEqual([101,11,23]);
+      });
     });
   });
 }

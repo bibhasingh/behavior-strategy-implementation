@@ -28,8 +28,8 @@ for (const solution of [secretSolution]) {
       // write the tests indicated by the comments
       describe('when set to lower case', () => {
         // when the text is an empty string
-        it(_, () => {
-          expect(solution(_, _)).toEqual(_);
+        it('first parameter to an empty string with lower case true', () => {
+          expect(solution('', true)).toEqual('');
         });
         // when the text is all upper case
         // when the text is all lower case

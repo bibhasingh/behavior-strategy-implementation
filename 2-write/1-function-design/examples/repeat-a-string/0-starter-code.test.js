@@ -30,9 +30,10 @@
 for (const solution of [secretSolution]) {
   // =============== test cases for this challenge ===============
 
-  describe(solution.name + ': _', () => {
-    describe('_', () => {
-      it('_', () => {});
+  describe(solution.name + ': Repeat String', () => {
+    describe('Repeat String', () => {
+      it('"Bibha",3 -> "BibhaBibhaBibha"', () => expect(solution('Bibha',3)).toEqual('BibhaBibhaBibha'));
+      it(' -> ', () => expect(solution()).toEqual(''));
     });
   });
 }
